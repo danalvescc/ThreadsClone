@@ -11,6 +11,10 @@
 		F49C983B2AEB498F00B0F8F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C983A2AEB498F00B0F8F4 /* ContentView.swift */; };
 		F49C983D2AEB499300B0F8F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49C983C2AEB499300B0F8F4 /* Assets.xcassets */; };
 		F49C98402AEB499300B0F8F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49C983F2AEB499300B0F8F4 /* Preview Assets.xcassets */; };
+		F49C984B2AEB49CA00B0F8F4 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C98492AEB49CA00B0F8F4 /* RegistrationView.swift */; };
+		F49C984C2AEB49CA00B0F8F4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C984A2AEB49CA00B0F8F4 /* LoginView.swift */; };
+		F49C98512AEB4A1600B0F8F4 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C984F2AEB4A1600B0F8F4 /* ThreadsTextFieldModifier.swift */; };
+		F49C98522AEB4A1600B0F8F4 /* ThreadsButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C98502AEB4A1600B0F8F4 /* ThreadsButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		F49C983A2AEB498F00B0F8F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F49C983C2AEB499300B0F8F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F49C983F2AEB499300B0F8F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F49C98492AEB49CA00B0F8F4 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		F49C984A2AEB49CA00B0F8F4 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F49C984F2AEB4A1600B0F8F4 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
+		F49C98502AEB4A1600B0F8F4 /* ThreadsButtonModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadsButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,8 @@
 		F49C98372AEB498F00B0F8F4 /* Threads */ = {
 			isa = PBXGroup;
 			children = (
+				F49C98462AEB49A800B0F8F4 /* Core */,
+				F49C984D2AEB4A0000B0F8F4 /* Utils */,
 				F49C98382AEB498F00B0F8F4 /* ThreadsApp.swift */,
 				F49C983A2AEB498F00B0F8F4 /* ContentView.swift */,
 				F49C983C2AEB499300B0F8F4 /* Assets.xcassets */,
@@ -65,6 +75,48 @@
 				F49C983F2AEB499300B0F8F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F49C98462AEB49A800B0F8F4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F49C98472AEB49B000B0F8F4 /* Authentication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F49C98472AEB49B000B0F8F4 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F49C98482AEB49B600B0F8F4 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F49C98482AEB49B600B0F8F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F49C984A2AEB49CA00B0F8F4 /* LoginView.swift */,
+				F49C98492AEB49CA00B0F8F4 /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F49C984D2AEB4A0000B0F8F4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F49C984E2AEB4A0500B0F8F4 /* ViewModifiers */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F49C984E2AEB4A0500B0F8F4 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F49C98502AEB4A1600B0F8F4 /* ThreadsButtonModifier.swift */,
+				F49C984F2AEB4A1600B0F8F4 /* ThreadsTextFieldModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49C98522AEB4A1600B0F8F4 /* ThreadsButtonModifier.swift in Sources */,
+				F49C984B2AEB49CA00B0F8F4 /* RegistrationView.swift in Sources */,
 				F49C983B2AEB498F00B0F8F4 /* ContentView.swift in Sources */,
+				F49C98512AEB4A1600B0F8F4 /* ThreadsTextFieldModifier.swift in Sources */,
+				F49C984C2AEB49CA00B0F8F4 /* LoginView.swift in Sources */,
 				F49C98392AEB498F00B0F8F4 /* ThreadsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
