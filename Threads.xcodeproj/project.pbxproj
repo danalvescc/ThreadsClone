@@ -15,6 +15,7 @@
 		F49C984C2AEB49CA00B0F8F4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C984A2AEB49CA00B0F8F4 /* LoginView.swift */; };
 		F49C98512AEB4A1600B0F8F4 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C984F2AEB4A1600B0F8F4 /* ThreadsTextFieldModifier.swift */; };
 		F49C98522AEB4A1600B0F8F4 /* ThreadsButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C98502AEB4A1600B0F8F4 /* ThreadsButtonModifier.swift */; };
+		F4C499D32AEDE5E200EA82F8 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C499D22AEDE5E200EA82F8 /* ThreadsTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F49C984A2AEB49CA00B0F8F4 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F49C984F2AEB4A1600B0F8F4 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 		F49C98502AEB4A1600B0F8F4 /* ThreadsButtonModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadsButtonModifier.swift; sourceTree = "<group>"; };
+		F4C499D22AEDE5E200EA82F8 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				F49C98472AEB49B000B0F8F4 /* Authentication */,
+				F49C98532AEC842400B0F8F4 /* TabBar */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -117,6 +120,22 @@
 				F49C984F2AEB4A1600B0F8F4 /* ThreadsTextFieldModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		F49C98532AEC842400B0F8F4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F4C499D02AEDE5BC00EA82F8 /* Views */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F4C499D02AEDE5BC00EA82F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4C499D22AEDE5E200EA82F8 /* ThreadsTabView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49C98522AEB4A1600B0F8F4 /* ThreadsButtonModifier.swift in Sources */,
+				F4C499D32AEDE5E200EA82F8 /* ThreadsTabView.swift in Sources */,
 				F49C984B2AEB49CA00B0F8F4 /* RegistrationView.swift in Sources */,
 				F49C983B2AEB498F00B0F8F4 /* ContentView.swift in Sources */,
 				F49C98512AEB4A1600B0F8F4 /* ThreadsTextFieldModifier.swift in Sources */,
