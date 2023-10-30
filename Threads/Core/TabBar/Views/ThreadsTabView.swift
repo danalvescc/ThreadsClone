@@ -14,7 +14,7 @@ struct ThreadsTabView: View {
             Text("Home")
                 .tabItem {
                     Image(systemName: selectedTab == 0 ? "house.fill" : "house")
-                        .symbolVariant(selectedTab == 0 ? .fill : .none)
+                        .environment(\.symbolVariants, selectedTab == 0 ? .fill :  .none)
                 }
                 .onAppear {
                     selectedTab = 0
@@ -33,15 +33,14 @@ struct ThreadsTabView: View {
             Text("Activity")
                 .tabItem {
                     Image(systemName: selectedTab == 3 ? "heart.fill" : "heart")
-                }
-                .onAppear {
-                    selectedTab = 3
+                        .environment(\.symbolVariants, selectedTab == 3 ? .fill :  .none)
+                        
                 }
                 .tag(3)
             Text("Profile")
                 .tabItem {
                     Image(systemName: selectedTab == 4 ? "person.fill" : "person")
-                        .symbolVariant(selectedTab == 4 ? .fill : .none)
+                        .environment(\.symbolVariants, selectedTab == 4 ? .fill :  .none)
                 }
                 .tag(4)
         }
