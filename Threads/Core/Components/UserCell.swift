@@ -34,7 +34,7 @@ struct UserCell: View {
             
         }
         .padding(.horizontal)
-
+ 
     }
 }
 
