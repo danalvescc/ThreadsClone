@@ -27,10 +27,12 @@ struct RegistrationView: View {
                     .autocapitalization(.none)
                 SecureField("Enter your password", text: $viewModel.password)
                     .modifier(ThreadsTextFieldModifier())
+                    .autocapitalization(.none)
                 TextField("Enter your full name", text: $viewModel.fullname)
                     .modifier(ThreadsTextFieldModifier())
                 TextField("Enter your username", text: $viewModel.username)
                     .modifier(ThreadsTextFieldModifier())
+                    .autocapitalization(.none)
             }
             
             Button (action: {
