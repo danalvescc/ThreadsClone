@@ -22,6 +22,7 @@ class AuthService {
         do {
             let result = try await Auth.auth().signIn(withEmail: withEmail, password: password)
             self.userSession = result.user
+            try await UserService.shared.fetchCurrentUser()
         } catch {
             print("DEBUG: Failed to create user with error \(error.localizedDescription)")
         }
@@ -41,6 +42,7 @@ class AuthService {
     func signOut() {
         try? Auth.auth().signOut()
         self.userSession = nil
+        UserService.shared.reset()
     }
     
     @MainActor
@@ -55,5 +57,6 @@ class AuthService {
             return
         }
         try await Firestore.firestore().collection("users").document(id).setData(userData)
+        UserService.shared.currentUser = user
     }
 }
