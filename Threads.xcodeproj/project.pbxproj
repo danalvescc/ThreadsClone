@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F44705AD2AFC5B8C00862D2C /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44705AC2AFC5B8C00862D2C /* ExploreViewModel.swift */; };
+		F44705B32AFC5FE400862D2C /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44705B22AFC5FE400862D2C /* DeveloperPreview.swift */; };
 		F46996412AF08A2600091384 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46996402AF08A2600091384 /* FeedView.swift */; };
 		F46996432AF08B1B00091384 /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46996422AF08B1B00091384 /* ThreadCell.swift */; };
 		F46996472AF092D700091384 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46996462AF092D700091384 /* ExploreView.swift */; };
@@ -63,6 +65,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F44705AC2AFC5B8C00862D2C /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		F44705B22AFC5FE400862D2C /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		F46996402AF08A2600091384 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		F46996422AF08B1B00091384 /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
 		F46996462AF092D700091384 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
@@ -130,6 +134,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F44705AB2AFC5B8000862D2C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F44705AC2AFC5B8C00862D2C /* ExploreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F44705AE2AFC5D2000862D2C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F44705B12AFC5FD100862D2C /* Mooks */ = {
+			isa = PBXGroup;
+			children = (
+				F44705B22AFC5FE400862D2C /* DeveloperPreview.swift */,
+			);
+			path = Mooks;
+			sourceTree = "<group>";
+		};
 		F469963E2AF089F900091384 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +177,7 @@
 		F46996442AF0926900091384 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				F44705AB2AFC5B8000862D2C /* ViewModel */,
 				F46996452AF0928600091384 /* View */,
 			);
 			path = Explore;
@@ -317,6 +345,8 @@
 		F49C98372AEB498F00B0F8F4 /* Threads */ = {
 			isa = PBXGroup;
 			children = (
+				F44705B12AFC5FD100862D2C /* Mooks */,
+				F44705AE2AFC5D2000862D2C /* Extensions */,
 				F46996972AF53C1800091384 /* App */,
 				F49C98462AEB49A800B0F8F4 /* Core */,
 				F47E36642AF97BF200783A10 /* Model */,
@@ -515,9 +545,11 @@
 				F46996432AF08B1B00091384 /* ThreadCell.swift in Sources */,
 				F47E366B2AF9836C00783A10 /* UserService.swift in Sources */,
 				F46996412AF08A2600091384 /* FeedView.swift in Sources */,
+				F44705B32AFC5FE400862D2C /* DeveloperPreview.swift in Sources */,
 				F47E36632AF7E41F00783A10 /* LoginViewModel.swift in Sources */,
 				F49C98522AEB4A1600B0F8F4 /* ThreadsButtonModifier.swift in Sources */,
 				F4C499D32AEDE5E200EA82F8 /* ThreadsTabView.swift in Sources */,
+				F44705AD2AFC5B8C00862D2C /* ExploreViewModel.swift in Sources */,
 				F46996472AF092D700091384 /* ExploreView.swift in Sources */,
 				F49C984B2AEB49CA00B0F8F4 /* RegistrationView.swift in Sources */,
 				F47E36612AF7DEE600783A10 /* ContentViewModel.swift in Sources */,

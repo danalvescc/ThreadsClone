@@ -8,22 +8,33 @@
 import SwiftUI
 
 struct ExploreView: View {
+    @StateObject var viewModel = ExploreViewModel()
     @State private var searchText = ""
+    
+    var users: [User] {
+        return viewModel.users
+    }
+    
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
-                LazyVStack {
-                    ForEach(1...10, id: \.self) { user in
-                        VStack {
-                            UserCell()
-                            Divider()
-                            
-                        }.padding(.vertical, 4)
+                LazyVStack(spacing: 2) {
+                    ForEach(users) { user in
+                        NavigationLink(value: user) {
+                            VStack {
+                                UserCell(user: user)
+                                Divider()
+                                
+                            }.padding(.vertical, 4)
+                        }
                     }
                 }
             }
             .navigationTitle("Search")
             .searchable(text: $searchText, prompt: "Search")
+            .navigationDestination(for: User.self) { user in
+                return ProfileView()
+            }
         }
     }
 }
