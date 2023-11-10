@@ -69,19 +69,19 @@ struct ProfileView: View {
                                         .stroke(Color(.systemGray4), lineWidth: 1)
                                 }
                         }
-    //                    Button {
-    //                        print("DEBUG: Share")
-    //                    } label: {
-    //                        RoundedRectangle(cornerRadius: 10)
-    //                            .fill(Color(.black))
-    //                            .frame(maxWidth: .infinity, minHeight: 32)
-    //                            .overlay {
-    //                                Text("Follow")
-    //                                    .font(.subheadline)
-    //                                    .fontWeight(.semibold)
-    //                                    .foregroundStyle(Color(.white))
-    //                            }
-    //                    }
+                        //                    Button {
+                        //                        print("DEBUG: Share")
+                        //                    } label: {
+                        //                        RoundedRectangle(cornerRadius: 10)
+                        //                            .fill(Color(.black))
+                        //                            .frame(maxWidth: .infinity, minHeight: 32)
+                        //                            .overlay {
+                        //                                Text("Follow")
+                        //                                    .font(.subheadline)
+                        //                                    .fontWeight(.semibold)
+                        //                                    .foregroundStyle(Color(.white))
+                        //                            }
+                        //                    }
                     }
                     VStack {
                         HStack {
@@ -128,7 +128,7 @@ struct ProfileView: View {
                         } label: {
                             Image(systemName: "line.3.horizontal")
                         }
-
+                        
                     }
                 }
         }
