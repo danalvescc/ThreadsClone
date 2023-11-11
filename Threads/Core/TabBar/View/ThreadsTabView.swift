@@ -38,7 +38,7 @@ struct ThreadsTabView: View {
                         
                 }
                 .tag(3)
-            ProfileView()
+            CurrentProfileView()
                 .tabItem {
                     Image(systemName: selectedTab == 4 ? "person.fill" : "person")
                         .environment(\.symbolVariants, selectedTab == 4 ? .fill :  .none)

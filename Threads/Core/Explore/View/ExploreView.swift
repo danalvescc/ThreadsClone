@@ -33,7 +33,7 @@ struct ExploreView: View {
             .navigationTitle("Search")
             .searchable(text: $searchText, prompt: "Search")
             .navigationDestination(for: User.self) { user in
-                return ProfileView()
+                ProfileView(user: user)
             }
         }
     }

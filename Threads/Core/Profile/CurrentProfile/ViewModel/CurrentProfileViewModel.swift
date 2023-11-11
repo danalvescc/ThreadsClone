@@ -1,5 +1,5 @@
 //
-//  ProfileViewModel.swift
+//  CurrentProfileViewModel.swift
 //  Threads
 //
 //  Created by Daniel  Alves Barreto on 06/11/23.
@@ -8,7 +8,7 @@
 import Firebase
 import Combine
 
-class ProfileViewModel: ObservableObject {
+class CurrentProfileViewModel: ObservableObject {
     @Published var currentUser: User?
     private var cancellables = Set<AnyCancellable>()
     
