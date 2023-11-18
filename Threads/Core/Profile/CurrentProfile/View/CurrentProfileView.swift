@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CurrentProfileView: View {
     @StateObject var viewModel = CurrentProfileViewModel()
+    @State var showEdit = false
     
     private var currentUser: User? {
         return viewModel.currentUser
@@ -23,7 +24,7 @@ struct CurrentProfileView: View {
                     }
                     HStack {
                         Button {
-                            print("DEBUG: Edit")
+                            showEdit.toggle()
                         } label: {
                             Text("Edit Profile")
                                 .font(.subheadline)
@@ -35,20 +36,10 @@ struct CurrentProfileView: View {
                                         .stroke(Color(.systemGray4), lineWidth: 1)
                                 }
                         }
-                        Button {
-                            print("DEBUG: Share")
-                        } label: {
-                            Text("Share Profile")
-                                .font(.subheadline)
-                                .fontWeight(.semibold)
-                                .foregroundStyle(Color(.black))
-                                .frame(maxWidth: .infinity, minHeight: 32)
-                                .overlay {
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color(.systemGray4), lineWidth: 1)
-                                }
-                        }
                     }
+                    
+                    
+                    
                     UserContentListView()
                 }
             }.padding(.horizontal)
@@ -62,6 +53,10 @@ struct CurrentProfileView: View {
                         
                     }
                 }
+                .sheet(isPresented: $showEdit, content: {
+                    EditProfileView()
+                        .environmentObject(viewModel)
+                })
         }
     }
 }
