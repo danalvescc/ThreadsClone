@@ -55,7 +55,6 @@ struct CurrentProfileView: View {
                 }
                 .sheet(isPresented: $showEdit, content: {
                     EditProfileView()
-                        .environmentObject(viewModel)
                 })
         }
     }

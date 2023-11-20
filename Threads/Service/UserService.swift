@@ -33,6 +33,15 @@ class UserService {
         return users.filter({ $0.id != uid })
     }
     
+    func uploadUserProfileImage(withImageUrl imageUrl: String) async throws {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        try await Firestore.firestore().collection("users").document(uid).updateData([
+            "profileImageUrl": imageUrl
+        ])
+        self.currentUser?.profileImageUrl = imageUrl
+        
+    }
+    
     func reset() {
         self.currentUser = nil
     }

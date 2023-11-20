@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F40804ED2B092FDF002BE36F /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40804EC2B092FDF002BE36F /* EditProfileViewModel.swift */; };
+		F40804EF2B0931DB002BE36F /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40804EE2B0931DB002BE36F /* ImageUploader.swift */; };
 		F44705AD2AFC5B8C00862D2C /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44705AC2AFC5B8C00862D2C /* ExploreViewModel.swift */; };
 		F44705B32AFC5FE400862D2C /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44705B22AFC5FE400862D2C /* DeveloperPreview.swift */; };
 		F44705B72B003C8B00862D2C /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44705B62B003C8B00862D2C /* ProfileHeader.swift */; };
@@ -68,6 +70,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F40804EC2B092FDF002BE36F /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		F40804EE2B0931DB002BE36F /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		F44705AC2AFC5B8C00862D2C /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		F44705B22AFC5FE400862D2C /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		F44705B62B003C8B00862D2C /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
@@ -140,6 +144,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F40804EB2B092FD0002BE36F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F40804EC2B092FDF002BE36F /* EditProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F44705AB2AFC5B8000862D2C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +275,7 @@
 		F46996562AF46A4E00091384 /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
+				F40804EB2B092FD0002BE36F /* ViewModel */,
 				F46996572AF46A6300091384 /* View */,
 			);
 			path = EditProfile;
@@ -304,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				F469969C2AF542F900091384 /* AuthService.swift */,
+				F40804EE2B0931DB002BE36F /* ImageUploader.swift */,
 				F47E366A2AF9836C00783A10 /* UserService.swift */,
 			);
 			path = Service;
@@ -378,12 +392,13 @@
 		F49C98372AEB498F00B0F8F4 /* Threads */ = {
 			isa = PBXGroup;
 			children = (
-				F44705B12AFC5FD100862D2C /* Mooks */,
-				F44705AE2AFC5D2000862D2C /* Extensions */,
 				F46996972AF53C1800091384 /* App */,
 				F49C98462AEB49A800B0F8F4 /* Core */,
+				F44705AE2AFC5D2000862D2C /* Extensions */,
+				F44705B12AFC5FD100862D2C /* Mooks */,
 				F47E36642AF97BF200783A10 /* Model */,
 				F49C984D2AEB4A0000B0F8F4 /* Utils */,
+				F46996982AF53C7D00091384 /* Service */,
 				F469965E2AF5395C00091384 /* GoogleService-Info.plist */,
 				F49C983C2AEB499300B0F8F4 /* Assets.xcassets */,
 				F49C983E2AEB499300B0F8F4 /* Preview Content */,
@@ -417,7 +432,6 @@
 		F49C98472AEB49B000B0F8F4 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				F46996982AF53C7D00091384 /* Service */,
 				F49C98482AEB49B600B0F8F4 /* View */,
 				F46996992AF53C8600091384 /* ViewModel */,
 			);
@@ -574,6 +588,7 @@
 				F469964E2AF0978C00091384 /* UserCell.swift in Sources */,
 				F469969D2AF542F900091384 /* AuthService.swift in Sources */,
 				F46996522AF1C99800091384 /* ProfileView.swift in Sources */,
+				F40804ED2B092FDF002BE36F /* EditProfileViewModel.swift in Sources */,
 				F469964C2AF096B900091384 /* CircularProfileImageView.swift in Sources */,
 				F46996432AF08B1B00091384 /* ThreadCell.swift in Sources */,
 				F47E366B2AF9836C00783A10 /* UserService.swift in Sources */,
@@ -585,6 +600,7 @@
 				F4C499D32AEDE5E200EA82F8 /* ThreadsTabView.swift in Sources */,
 				F44705AD2AFC5B8C00862D2C /* ExploreViewModel.swift in Sources */,
 				F46996472AF092D700091384 /* ExploreView.swift in Sources */,
+				F40804EF2B0931DB002BE36F /* ImageUploader.swift in Sources */,
 				F49C984B2AEB49CA00B0F8F4 /* RegistrationView.swift in Sources */,
 				F47E36612AF7DEE600783A10 /* ContentViewModel.swift in Sources */,
 				F44705B92B003F0300862D2C /* CurrentProfileView.swift in Sources */,

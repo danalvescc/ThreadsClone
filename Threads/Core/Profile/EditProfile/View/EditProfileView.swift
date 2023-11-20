@@ -9,11 +9,8 @@ import SwiftUI
 import PhotosUI
 
 struct EditProfileView: View {
-    @State private var bio = ""
-    @State private var link = ""
-    @State private var isPrivate = false
     @Environment(\.dismiss) var dismiss
-    @EnvironmentObject var viewModel: CurrentProfileViewModel
+    @StateObject var viewModel = EditProfileViewModel()
     
     var body: some View {
         NavigationStack {
@@ -52,7 +49,7 @@ struct EditProfileView: View {
                     VStack(alignment: .leading) {
                         Text("Bio")
                             .fontWeight(.semibold)
-                        TextField("Add bio...", text: $bio, axis: .vertical)
+                        TextField("Add bio...", text: $viewModel.bio, axis: .vertical)
                     }
                     
                     Divider()
@@ -61,12 +58,12 @@ struct EditProfileView: View {
                     VStack(alignment: .leading) {
                         Text("Link")
                             .fontWeight(.semibold)
-                        TextField("Add link...", text: $link)
+                        TextField("Add link...", text: $viewModel.link)
                     }
                     
                     Divider()
                     
-                    Toggle("Private profile", isOn: $isPrivate)
+                    Toggle("Private profile", isOn: $viewModel.isPrivate)
                 }
                 .font(.footnote)
                 .padding()
@@ -89,7 +86,10 @@ struct EditProfileView: View {
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Done") {
-                        
+                        Task {
+                            try await viewModel.uploadUserData()
+                            dismiss()
+                        }
                     }.font(.subheadline)
                         .foregroundStyle(Color(.black))
                         .fontWeight(.semibold)
