@@ -54,7 +54,7 @@ struct CurrentProfileView: View {
                     }
                 }
                 .sheet(isPresented: $showEdit, content: {
-                    EditProfileView()
+                    EditProfileView(user: currentUser)
                 })
         }
     }

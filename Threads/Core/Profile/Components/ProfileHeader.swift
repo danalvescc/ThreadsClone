@@ -33,7 +33,7 @@ struct ProfileHeader: View {
             
             Spacer()
             
-            CircularProfileImageView(imageName: "Dan_profile")
+            CircularProfileImageView(user: user)
         }
     }
 }
