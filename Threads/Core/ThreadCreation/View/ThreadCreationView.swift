@@ -19,7 +19,7 @@ struct ThreadCreationView: View {
         NavigationStack {
             VStack {
                 HStack(alignment: .top) {
-                    CircularProfileImageView(user: user) // TODO: CHANGE
+                    CircularProfileImageView(user: user)
                     VStack(alignment: .leading, spacing: 4) {
                         Text(user?.username ?? "")
                             .fontWeight(.semibold)
