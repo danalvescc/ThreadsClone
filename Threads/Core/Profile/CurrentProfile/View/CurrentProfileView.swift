@@ -39,8 +39,9 @@ struct CurrentProfileView: View {
                     }
                     
                     
-                    
-                    UserContentListView()
+                    if let user = currentUser {
+                        UserContentListView(user: user)
+                    }
                 }
             }.padding(.horizontal)
                 .toolbar {
